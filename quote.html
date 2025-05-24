@@ -1,1 +1,56 @@
-<!-- TODO: Add finalized quote page content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote | Washington Construction</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow py-4 px-6 flex justify-between items-center">
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="logo.png" alt="Logo" class="h-8">
+      <span class="font-bold text-xl text-green-800">Washington Construction</span>
+    </a>
+    <nav class="space-x-4 text-sm">
+      <a href="index.html" class="hover:text-green-600">Home</a>
+      <a href="about.html" class="hover:text-green-600">About</a>
+      <a href="services.html" class="hover:text-green-600">Services</a>
+      <a href="portfolio.html" class="hover:text-green-600">Portfolio</a>
+      <a href="contact.html" class="hover:text-green-600">Contact</a>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto py-16 px-4">
+    <h1 class="text-4xl font-bold text-center text-green-800 mb-10">Request a Free Quote</h1>
+    <p class="text-center text-lg mb-8">Let us know the details of your project and we’ll provide a personalized quote.</p>
+    <div class="bg-white p-6 rounded shadow">
+      <form action="https://formsubmit.co/manueltitanlawn@yahoo.com" method="POST">
+        <label class="block mb-2 font-semibold">Name</label>
+        <input type="text" name="name" required class="w-full border rounded px-4 py-2 mb-4">
+        <label class="block mb-2 font-semibold">Email</label>
+        <input type="email" name="email" required class="w-full border rounded px-4 py-2 mb-4">
+        <label class="block mb-2 font-semibold">Phone</label>
+        <input type="tel" name="phone" class="w-full border rounded px-4 py-2 mb-4">
+        <label class="block mb-2 font-semibold">Project Type</label>
+        <select name="project" class="w-full border rounded px-4 py-2 mb-4">
+          <option>Landscaping</option>
+          <option>Remodeling</option>
+          <option>Roofing</option>
+          <option>Concrete</option>
+          <option>Decks/Outdoor Structures</option>
+          <option>Maintenance</option>
+        </select>
+        <label class="block mb-2 font-semibold">Project Description</label>
+        <textarea name="message" rows="5" required class="w-full border rounded px-4 py-2 mb-4"></textarea>
+        <input type="hidden" name="_next" value="thank-you.html">
+        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">Submit Request</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-green-800 text-white text-center py-6 mt-10">
+    <div>&copy; 2025 Washington Construction | Serving Pierce County, WA</div>
+  </footer>
+</body>
+</html>
